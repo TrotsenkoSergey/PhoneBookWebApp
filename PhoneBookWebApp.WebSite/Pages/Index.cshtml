@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+    var phoneBook = Model.PhoneBook;
+}
+
+<form method="post">
+    <div style="font-size: 20px; " class="registration-cssave">
+        <h2 style="margin: 30px 0px 0px 10px;">Внесенные записи</h2>
+        <table style="margin: 10px; border-style:dashed">
+            @foreach (var book in phoneBook)
+            {
+                <tr style="margin: 10px; ">
+                    <td style="margin: 10px; ">
+                        <a href="/Forms/AllView?Id=@book.Id">Id - @book.Id</a>
+                    </td>
+                    <td>
+                        ФИО - @($"{book.LastName} {book.FirstName} {book.MiddleName}")
+                    </td>
+                    <td>
+                        Телефон - @book.PhoneNumber
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</form>

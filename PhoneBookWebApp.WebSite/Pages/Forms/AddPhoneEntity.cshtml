@@ -1,0 +1,34 @@
+﻿@page
+@model PhoneBookWebApp.WebSite.Pages.Forms.AddPhoneEntityModel
+@{
+    ViewData["Title"] = "Add Phone Entity";
+    var phoneBook = Model.PhoneBook;
+}
+
+<form method="post">
+    <div class="registration-cssave">
+        <h3 class="text-center">Внести запись в телефонную книгу</h3>
+        <div class="form-group">
+            <input class="form-control item" name="LastName" type="text" minlength="4" placeholder="Фамилия">
+        </div>
+        <div class="form-group">
+            <input class="form-control item" name="FirstName" type="text" minlength="4" placeholder="Имя">
+        </div>
+        <div class="form-group">
+            <input class="form-control item" name="MiddleName" type="text" placeholder="Отчество">
+        </div>
+        <div class="form-group">
+            <input class="form-control item" name="PhoneNumber" type="text" placeholder="Номер телефона">
+        </div>
+        <div class="form-group">
+            <input class="form-control item" name="Address" type="text" maxlength="50" placeholder="Адрес">
+        </div>
+        <div class="form-group">
+            <input class="form-control item" name="Description" type="text" maxlength="100" placeholder="Описание">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary btn-block submit" type="submit">Внести запись</button>
+        </div>
+    </div>
+</form>

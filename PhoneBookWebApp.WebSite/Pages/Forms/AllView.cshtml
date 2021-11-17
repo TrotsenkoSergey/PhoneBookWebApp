@@ -1,0 +1,35 @@
+﻿@page
+@model PhoneBookWebApp.WebSite.Pages.Forms.AllViewModel
+@{
+    ViewData["Title"] = "All View";
+    var book = Model.PhoneBookEntity;
+}
+
+<style>
+    table, caption, thead, tbody, th, tr {
+    margin:10px;}
+</style>
+
+<div style="font-size: 20px; font-weight: 100; ">
+    <table border="1">
+        <caption>Просмотр конкретной записи</caption>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>ФИО</th>
+                <th>Телефон</th>
+                <th>Адрес</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>@book.Id</th>
+                <th>@($"{book.LastName} {book.FirstName} {book.MiddleName}")</th>
+                <th>@book.PhoneNumber</th>
+                <th>@book.Address</th>
+                <th>@book.Description</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

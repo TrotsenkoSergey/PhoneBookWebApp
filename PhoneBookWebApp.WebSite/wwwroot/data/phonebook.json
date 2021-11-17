@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "lastname": "Троценко",
+    "firstname": "Сергей",
+    "middlename": "",
+    "phonenumber": "112-234",
+    "address": "Омск",
+    "description": "Нет"
+  },
+  {
+    "id": 2,
+    "lastname": "Яровой",
+    "firstname": "Александр",
+    "middlename": "",
+    "phonenumber": "432-567",
+    "address": "Москва",
+    "description": "Нет"
+  },
+  {
+    "id": 3,
+    "lastname": "Петров",
+    "firstname": "Петр",
+    "middlename": "Петрович",
+    "phonenumber": "345-898",
+    "address": "Новосибирск",
+    "description": "Нет"
+  },
+  {
+    "id": 4,
+    "lastname": "Сидоров",
+    "firstname": "Игорь",
+    "middlename": "",
+    "phonenumber": "678-098",
+    "address": "Тюмень",
+    "description": "Нет"
+  },
+  {
+    "id": 5,
+    "lastname": "Иванов",
+    "firstname": "Иван",
+    "middlename": "",
+    "phonenumber": "530-385",
+    "address": "Томск",
+    "description": ""
+  }
+]
